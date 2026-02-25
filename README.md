@@ -1,2 +1,0 @@
-# Telegram_bot
-Bot
