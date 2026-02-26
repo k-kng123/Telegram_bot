@@ -62,8 +62,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Добро пожаловать в магазин **Vitamin_krasnodar_123**!\n\n"
         "🌿 У нас вы найдёте:\n"
         "• Витамины и минералы\n"
-        "• БАДы для здоровья\n"
-        "• Спортивное питание\n\n"
+        "• БАДы для здоровья взрослых и детей\n"
+        "• Спортивные добавки\n\n"
         "Нажмите кнопку ниже, чтобы перейти в магазин.",
         reply_markup=reply_markup,
         parse_mode='Markdown'
@@ -72,17 +72,16 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def contacts(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "📞 **Контакты**\n\n"
-        "📍 Адрес: г. Краснодар\n"
-        "📱 Телефон: +7 (XXX) XXX-XX-XX\n"
-        "⏰ Режим работы: Пн-Сб 9:00-20:00",
+        "📍 Адрес: г. Краснодар, ул. Ставропольская 174/1, вход со двора, 3 этаж\n"
+        "📱 Телефон: +7 (961) 590-71-87\n",
         parse_mode='Markdown'
     )
 
 async def about(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "ℹ️ **О магазине**\n\n"
-        "Мы — магазин натуральных витаминов и добавок.\n\n"
-        "✅ Сертифицированные товары\n"
+        "Мы — магазин витаминов и добавок.\n\n"
+        "✅ Товары из США, Турции\n"
         "✅ Быстрая доставка\n"
         "✅ Самовывоз",
         parse_mode='Markdown'
