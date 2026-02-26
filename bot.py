@@ -36,9 +36,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"👋 Привет, {user.first_name}!\n\n"
             "Добро пожаловать в магазин **Vitamin\\_krasnodar\\_123**\\!\n\n"
             "🌿 У нас вы найдёте:\n"
-            "• Витамины и минералы\n"
+            "• Витамины и для взрослых и детей\n"
             "• БАДы для здоровья\n"
-            "• Спортивное питание\n\n"
+            "• Спортивные добавки\n\n"
             "Нажмите кнопку ниже, чтобы перейти в магазин\\."
         )
     
@@ -64,16 +64,15 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if query.data == "contacts":
         await query.message.reply_text(
             "📞 *Контакты*\n\n"
-            "📍 Адрес: г\\. Краснодар\n"
-            "📱 Телефон: \\+7 \\(XXX\\) XXX\\-XX\\-XX\n"
-            "⏰ Режим работы: Пн\\-Сб 9:00\\-20:00",
+            "📍 Адрес: г\\. Краснодар, ул. Ставропольская, д.174/1, вход со двора, 3 этаж\n"
+            "📱 Телефон: \\+7 \\(961\\) 590\\-71\\-87\n",
             parse_mode='MarkdownV2'
         )
     elif query.data == "about":
         await query.message.reply_text(
             "ℹ️ *О магазине*\n\n"
-            "Мы — магазин натуральных витаминов и добавок\\.\n\n"
-            "✅ Сертифицированные товары\n"
+            "Мы — магазин витаминов и добавок\\.\n\n"
+            "✅ Товары с iHerb и Турции\n"
             "✅ Быстрая доставка\n"
             "✅ Самовывоз",
             parse_mode='MarkdownV2'
